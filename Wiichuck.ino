@@ -1,7 +1,10 @@
 /*
- * WiiChuckDemo -- 
+ * WiiChuck -- working demo
  *
- * 2008 Tod E. Kurt, http://thingm.com/
+ * Animatronics - NYU Shanghai
+ * Prof. Rodolfo Cossovich
+ * 
+ * Original code from Tod E. Kurt, http://thingm.com/
  *
  */
 
@@ -16,10 +19,12 @@ int ledPin = 13;
 
 void setup()
 {
-    Serial.begin(19200);
+    delay (1000);
+    Serial.begin(9600);
     nunchuck_setpowerpins();
+    delay (1000);
     nunchuck_init(); // send the initilization handshake
-    
+    delay (1000);
     Serial.print("WiiChuckDemo ready\n");
 }
 
