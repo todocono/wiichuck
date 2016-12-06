@@ -68,11 +68,11 @@ void loop()
   delay(1);
 
   //here we calculate where servos will move to
-    pos1 = map ( joyX, 1, 255, 0, 180);       //check map() syntax at https://www.arduino.cc/en/Reference/Map
-    pos2 = map ( joyY, 1, 255, 0, 180);
+//    pos1 = map ( joyX, 1, 255, 0, 180);       //check map() syntax at https://www.arduino.cc/en/Reference/Map
+  //  pos2 = map ( joyY, 1, 255, 0, 180);
 
   //here we update servos positions. Check 
-    servo1.write(pos1);              // tell servo to go to position in variable 'pos' 
-    servo2.write(pos2);              // tell servo to go to position in variable 'pos' 
+   // servo1.write(pos1);              // tell servo to go to position in variable 'pos' 
+   // servo2.write(pos2);              // tell servo to go to position in variable 'pos' 
 }
 
